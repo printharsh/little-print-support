@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an improvement to Little Print.
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public issue. Do not include private photos or personal information. Suggestions are reviewed, but submission does not guarantee implementation."
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Describe the task and how this improvement would help.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested approach
+      description: Optional details or alternatives.

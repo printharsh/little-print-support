@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a problem using Little Print.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not include private photos, email addresses, device identifiers, or other personal information. Redact screenshots before uploading."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the steps you took and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Little Print version
+      placeholder: "For example, 1.1 (9)"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model and iOS version
+    validations:
+      required: true
+  - type: textarea
+    id: printer
+    attributes:
+      label: Printer details, if relevant
+      description: Printer model, connection behavior, and whether a physical photo came out. Do not retry an uncertain print just to complete this form.

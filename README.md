@@ -1,6 +1,6 @@
 # Little Print support page
 
-Static, responsive privacy and beta-support page for the **1.1 (8) source** iPhone app and Photos share extension. `index.html` is the deployable source; it uses no JavaScript, external fonts, or external assets.
+Static, responsive privacy and public-support page for the **1.1** iPhone app and Photos share extension. `index.html` is the deployable source; it uses no JavaScript, external fonts, or external assets.
 
 The notice describes local photo processing, Bluetooth printing, same-phone App Group history/preferences, an app-local ordered waiting tray (up to ten photos), explicit exports, Apple/TestFlight services, and deletion limits. App selection supports up to ten photos at once subject to capacity; the Photos extension separately supports one image in the editor or two to six in collage. Next photo is manual and never prints automatically. It does not advertise removed creative-camera or shared-cloud features.
 
@@ -9,3 +9,5 @@ The tool instructions describe the unified inline workspace: a persistent Polaro
 Current intended URL: https://printharsh.github.io/little-print-support/
 
 Site commits are pushed to the existing support repository. The release owner should check the live page after deployment. The documentation update does not establish that app build 1.1 (8) is built, uploaded, or available to testers. This support URL is not a TestFlight installation link. No personal contact details are embedded.
+
+Public support uses GitHub issue forms for bugs and ideas. Issues and attachments are public; users are instructed to exclude private photos and personal information. GitHub handles voluntary issue submissions under its own privacy policy. No direct in-app feedback backend or automatic report transmission is advertised. TestFlight feedback remains an option for beta testers.
