@@ -1,13 +1,21 @@
-# Little Print support page
+# Little Print landing page and support
 
-Static, responsive privacy and public-support page for the **1.1** iPhone app and Photos share extension. `index.html` is the deployable source; it uses no JavaScript, external fonts, or external assets.
+Static responsive landing page, full app privacy notice, and support instructions for the 1.1 iPhone app and Photos extension. No analytics, remote fonts, backend, enrollment, or personal contact information. Public reports use the existing GitHub issue forms; their public nature is explained before users submit.
 
-The notice describes local photo processing, Bluetooth printing, same-phone App Group history/preferences, an app-local ordered waiting tray (up to ten photos), explicit exports, Apple/TestFlight services, and deletion limits. App selection supports up to ten photos at once subject to capacity; the Photos extension separately supports one image in the editor or two to six in collage. Next photo is manual and never prints automatically. It does not advertise removed creative-camera or shared-cloud features.
+## Local preview
 
-The tool instructions describe the unified inline workspace: a persistent Polaroid frame, compact palettes, X to cancel, and a checkmark to apply and return to the main preview. Crop is the shared native editor in the app and extension; Adjust contains Looks, Light, and Note. The separate Mantis crop route is no longer advertised.
+From the parent workspace run `python3 -m http.server 8765 --directory SupportSite`, then open `http://localhost:8765`. All CSS, JavaScript, images, and the icon are local. No build or dependency installation is required. Do not push/publish until the release owner has reviewed the page.
 
-Current intended URL: https://printharsh.github.io/little-print-support/
+## Release status
 
-Site commits are pushed to the existing support repository. The release owner should check the live page after deployment. The documentation update does not establish that app build 1.1 (8) is built, uploaded, or available to testers. This support URL is not a TestFlight installation link. No personal contact details are embedded.
+The app is currently Waiting for Review. `release.js` deliberately sets `isReleased: false`; the primary call to action is a disabled Coming to the App Store button. Change this only after confirming the public listing is live. When releasing, also update the description/Open Graph metadata in index.html to remove Coming to the App Store. No TestFlight installation link is advertised because its current public availability is not established.
 
-Public support uses GitHub issue forms for bugs and ideas. Issues and attachments are public; users are instructed to exclude private photos and personal information. GitHub handles voluntary issue submissions under its own privacy policy. No direct in-app feedback backend or automatic report transmission is advertised. TestFlight feedback remains an option for beta testers.
+## Assets
+
+- `icon-monochrome.png`: existing app-owned icon.
+- `assets/editor.png`, `collage.png`, `collection.png`: actual native view renders from the current store screenshot set under `build/store-screenshots/1290x2796/` in the parent workspace. Example images are demonstration content, not a user's print history. The page labels these as interface previews.
+- `assets/social-card.png`: 1200×630 social card from `build/marketing-v2/social-og-1200x630.png` in the parent workspace, using the app-owned icon and actual editor render.
+
+The original privacy and support sections are retained, including local processing, Bluetooth, same-phone App Group sharing, waiting tray limits, explicit printing, exports, deletion limits, public issue handling, and voluntary TestFlight feedback. This site does not advertise shared albums, simultaneous printer connections, removed creative-camera features, or compatibility with all printers.
+
+Production URL: https://printharsh.github.io/little-print-support/
