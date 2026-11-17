@@ -1,6 +1,6 @@
 # Little Print landing page and support
 
-Static responsive landing page, full app privacy notice, and support instructions for the 1.1 iPhone app and Photos extension. No analytics, externally hosted fonts, backend, enrollment, or personal contact information. Public reports use the existing GitHub issue forms; their public nature is explained before users submit.
+Static responsive landing page, full app privacy notice, and support instructions for the current 1.1 iPhone app and Photos extension, with clearly labeled pending 1.2 printer additions. No analytics, externally hosted fonts, backend, enrollment, or personal contact information. Public reports use the existing GitHub issue forms; their public nature is explained before users submit.
 
 ## Local preview
 
@@ -8,7 +8,7 @@ From the parent workspace run `python3 -m http.server 8765 --directory SupportSi
 
 ## Release status
 
-The app is currently Waiting for Review. `release.js` deliberately sets `isReleased: false`; the primary call to action is a disabled Coming to the App Store button. Change this only after confirming the public listing is live. When releasing, also update the description/Open Graph metadata in index.html to remove Coming to the App Store. No TestFlight installation link is advertised because its current public availability is not established.
+Version 1.1 is publicly available according to the November 17, 2026 App Store Connect readback. The page links directly to its App Store listing. Version 1.2 is separately labeled being prepared for release; do not claim availability until verified. `release.js` contains no automatic release switch, tracking or requests. No TestFlight installation link is advertised because its public availability has not been established.
 
 ## Assets
 
