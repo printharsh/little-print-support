@@ -8,7 +8,7 @@ From the parent workspace run `python3 -m http.server 8765 --directory SupportSi
 
 ## Release status
 
-Version 1.1 is publicly available according to the November 17, 2026 App Store Connect readback. The page links directly to its App Store listing. Version 1.2 is separately labeled being prepared for release; do not claim availability until verified. `release.js` contains no automatic release switch, tracking or requests. No TestFlight installation link is advertised because its public availability has not been established.
+Version 1.1 is publicly available according to the November 17, 2026 App Store Connect readback. The page links directly to its App Store listing. Version 1.2 (12) was submitted and is Waiting for Review, as verified in App Store Connect on November 17, 2026. Automatic release after approval is selected, but public availability must not be claimed until verified. `release.js` contains no automatic release switch, tracking or requests. No TestFlight installation link is advertised because its public availability has not been established.
 
 ## Assets
 
